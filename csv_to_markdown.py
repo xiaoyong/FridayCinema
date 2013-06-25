@@ -16,7 +16,7 @@ def main():
     """The main function.
     """
     if len(sys.argv) < 2:
-        print('Usage: {} movie_list.csv'.format(sys.argv[0]))
+        sys.stderr.write('Usage: {} movie_list.csv\n'.format(sys.argv[0]))
         return
 
     outfile = open('README.md', 'w')

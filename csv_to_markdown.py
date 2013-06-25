@@ -23,7 +23,7 @@ def main():
     outfile.write('''\
 # Friday Cinema
 
-Here is the list of movies showed by *Friday Cinema* in PICB:
+Here is the list of movies shown by *Friday Cinema* in PICB:
 
 ''')
 

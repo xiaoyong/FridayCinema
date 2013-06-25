@@ -1,6 +1,6 @@
 # Friday Cinema
 
-Here is the list of movies showed by *Friday Cinema* in PICB:
+Here is the list of movies shown by *Friday Cinema* in PICB:
 
 - **Year 2013**
     - 2013-06-21 *Goodbye Lenin* 再见列宁 (2003)

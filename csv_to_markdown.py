@@ -3,7 +3,7 @@
 
 """Export the list of movies from CSV format to Markdown.
 
-Usage: csv_to_markdown.py showing_history.csv
+Usage: csv_to_markdown.py movie_list.csv
     The output will be written into README.md
 """
 
@@ -16,7 +16,7 @@ def main():
     """The main function.
     """
     if len(sys.argv) < 2:
-        print('Usage: {} file.csv'.format(sys.argv[0]))
+        print('Usage: {} movie_list.csv'.format(sys.argv[0]))
         return
 
     outfile = open('README.md', 'w')
@@ -35,9 +35,11 @@ Here is the list of movies shown by *Friday Cinema* in PICB:
             if current_year != year:
                 year = current_year
                 outfile.write('- **Year {:d}**\n'.format(year))
-            if len(row) >= 2: # Emphasize the English name
+            if len(row) >= 2:
+                # Emphasize the English name
                 row[1] = '*{}*'.format(row[1])
-            if len(row) >= 4: # Parenthesize the year
+            if len(row) >= 4:
+                # Parenthesize the year
                 row[3] = '({})'.format(row[3])
             outfile.write('    - {}\n'.format(' '.join(row)))
 
